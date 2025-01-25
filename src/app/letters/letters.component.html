@@ -1,0 +1,17 @@
+<div class="letters-container">
+  <div class="letter-content">
+    <span class="letter-number">Letter {{ currentLetterIndex + 1 }}</span>
+    <h3>{{ letters[currentLetterIndex].subject }}</h3>
+    <p [innerHTML]="formatContent(letters[currentLetterIndex].content)"></p>
+  </div>
+  <div class="navigation">
+    <button (click)="previousLetter()" [disabled]="currentLetterIndex === 0">Previous</button>
+    <button (click)="nextLetter()" [disabled]="currentLetterIndex === letters.length - 1">Next</button>
+  </div>
+  <div class="subject-selection">
+    <label for="subject-select">Select Subject:</label>
+    <select id="subject-select" [(ngModel)]="letters[currentLetterIndex].subject" (change)="selectLetterBySubject($event.target.value)">
+      <option *ngFor="let letter of letters" [value]="letter.subject">{{ letter.subject }}</option>
+    </select>
+  </div>
+</div>

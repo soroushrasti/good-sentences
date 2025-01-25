@@ -1,0 +1,8 @@
+<div class="quotes-container">
+  <ul class="quotes-list">
+    <li *ngFor="let quote of quotes; let i = index">
+      <span class="quote-number">{{ i + 1 }}.</span> {{ quote }}
+    </li>
+  </ul>
+  <img src="assets/quotes.jpg" alt="Image" class="quotes-image">
+</div>

@@ -1,0 +1,86 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.letters-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f0f8ff; /* Light blue background */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.letter-content {
+  width: 100%;
+  max-width: 800px;
+  background-color: #ffffff; /* White background for letters */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.letter-number {
+  font-weight: bold;
+  color: #4CAF50; /* Green color for letter number */
+  margin-bottom: 10px;
+  display: block;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 800px;
+}
+
+.navigation button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50; /* Green background for buttons */
+  color: #ffffff; /* White text color */
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navigation button:disabled {
+  background-color: #cccccc; /* Gray background for disabled buttons */
+  cursor: not-allowed;
+}
+
+.subject-selection {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 800px;
+}
+
+.subject-selection label {
+  font-weight: bold;
+  color: #4CAF50; /* Green color for label */
+  margin-right: 10px;
+}
+
+.subject-selection select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  background-color: #ffffff; /* White background for dropdown */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: #333333; /* Dark gray text color */
+  appearance: none; /* Remove default dropdown arrow */
+  background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 5"><path fill="#4CAF50" d="M2 0L0 2h4z"/></svg>'); /* Custom dropdown arrow */
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 10px;
+}
+
+.subject-selection select:focus {
+  border-color: #4CAF50; /* Green border on focus */
+  outline: none;
+}

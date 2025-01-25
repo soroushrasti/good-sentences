@@ -1,0 +1,45 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.quotes-container {
+  display: flex;
+  align-items: flex-start;
+  padding: 20px;
+  background-color: #f0f8ff; /* Light blue background */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.quotes-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  flex: 1;
+}
+
+.quotes-list li {
+  margin-bottom: 15px;
+  font-size: 18px;
+  line-height: 1.6;
+  padding: 10px;
+  background-color: #ffffff; /* White background for quotes */
+  border-left: 4px solid #4CAF50; /* Green border for bullet points */
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: #333333; /* Dark gray text color */
+}
+
+.quote-number {
+  font-weight: bold;
+  margin-right: 10px;
+  color: #4CAF50; /* Green color for quote numbers */
+}
+
+.quotes-image {
+  margin-left: 20px;
+  max-width: 400px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
