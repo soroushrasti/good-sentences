@@ -22,6 +22,7 @@
     "postcss": "^8.5.1",
     "postcss-loader": "^8.1.1",
     "rxjs": "~6.6.0",
+    "terser-webpack-plugin": "^5.3.11",
     "tslib": "^2.0.0",
     "webpack": "^5.97.1",
     "webpack-cli": "^6.0.1",
