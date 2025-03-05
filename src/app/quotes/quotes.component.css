@@ -37,9 +37,7 @@ body {
 }
 
 .quotes-image {
-  margin-left: 20px;
-  max-width: 400px;
+  width: 100%;
   height: auto;
-  border-radius: 15px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  max-width: 100%;
 }
