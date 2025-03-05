@@ -37,7 +37,9 @@ body {
 }
 
 .quotes-image {
-  width: 100%;
+  width: auto;
   height: auto;
-  max-width: 100%;
+  max-width: 50%; /* Adjust this value as needed */
+  max-height: 300px; /* Adjust this value as needed */
+  object-fit: contain; /* Ensures the image scales properly within the given dimensions */
 }
